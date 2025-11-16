@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import API_URL from '../config/backend.js';
+
 import CourseManagement from '../components/admin/CourseManagement';
 import InstructorManagement from '../components/admin/InstructorManagement';
 import ContactManagement from '../components/admin/ContactManagement';
