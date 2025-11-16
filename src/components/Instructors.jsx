@@ -21,7 +21,9 @@ const Instructors = () => {
   const getImageUrl = (image) => {
     if (!image) return 'https://via.placeholder.com/400x400?text=No+Image';
     if (image.startsWith('http')) return image;
-    return `http://localhost:5000${image}`;
+    // Extract base URL from API_URL (remove /api)
+    const baseUrl = API_URL.replace('/api', '');
+    return `${baseUrl}${image}`;
   };
 
   return (

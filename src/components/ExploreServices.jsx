@@ -21,7 +21,9 @@ const ExploreServices = () => {
   const getImageUrl = (image) => {
     if (!image) return 'https://via.placeholder.com/800x600?text=No+Image';
     if (image.startsWith('http')) return image;
-    return `http://localhost:5000${image}`;
+    // Extract base URL from API_URL (remove /api)
+    const baseUrl = API_URL.replace('/api', '');
+    return `${baseUrl}${image}`;
   };
 
   return (
