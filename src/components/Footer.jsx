@@ -1,4 +1,5 @@
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -104,12 +105,9 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="border-t border-blue-800 pt-8 mt-8">
-          <div className="flex flex-col sm:flex-row justify-between items-center">
-            <p className="text-blue-200 text-sm mb-4 sm:mb-0">
-              © 2024 VMSS TECHNOLOGIES. All rights reserved.
-            </p>
+          <div className="flex flex-col items-center justify-center text-center">
             <p className="text-blue-200 text-sm">
-              Powered by Readdy
+              © {currentYear} VMSS TECHNOLOGIES. All rights reserved.
             </p>
           </div>
         </div>

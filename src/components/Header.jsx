@@ -18,9 +18,21 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl md:text-2xl font-bold text-blue-600 cursor-pointer" onClick={() => scrollToSection('home')}>
-              VMSS TECHNOLOGIES
-            </h1>
+            <button
+              type="button"
+              onClick={() => scrollToSection('home')}
+              className="flex items-center gap-2 cursor-pointer focus:outline-none bg-transparent border-0 p-0"
+            >
+              <img
+                src="/vmss-logo.svg"
+                alt="VMSS Technologies logo"
+                className="h-10 w-10 object-contain"
+                loading="lazy"
+              />
+              <span className="text-xl md:text-2xl font-bold text-blue-600">
+                VMSS TECHNOLOGIES
+              </span>
+            </button>
           </div>
 
           {/* Desktop Navigation */}
